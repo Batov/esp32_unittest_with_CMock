@@ -14,7 +14,7 @@ list(APPEND TEST_COMPONENTS "component_a")
 list(APPEND TEST_COMPONENTS "component_b")
 list(APPEND TEST_COMPONENTS "component_c")
 
-if(DEFINED ENV{RUN_UNITTESTS})  
+if(DEFINED ENV{RUN_UNITTESTS})   
     set(SDKCONFIG_DEFAULTS "sdkconfig.unittest")
 endif() 
  
