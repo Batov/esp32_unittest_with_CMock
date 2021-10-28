@@ -1,5 +1,6 @@
 #include "component_b.h"
 #include "component_a.h"
+#include "component_c.h"
 
 #include <stdbool.h>
 
@@ -17,6 +18,14 @@ uint32_t component_b_add(uint32_t in)
     uint32_t ret = 0;
     if (init_completed)
         ret = component_a_increment(base + in)-1;
+    return ret;
+}
+
+uint32_t component_b_do(uint32_t in)
+{
+    uint32_t ret = 0;
+    if (init_completed)
+        ret = component_c_do(base + in);
     return ret;
 }
 

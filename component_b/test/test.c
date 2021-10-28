@@ -18,3 +18,9 @@ TEST_CASE("B 2", test_tag)
     component_a_increment_ExpectAndReturn(12, 13);
     TEST_ASSERT_EQUAL(12, component_b_add(1));
 }
+
+TEST_CASE("B 3", test_tag)
+{
+    component_b_init(11);
+    TEST_ASSERT_EQUAL(112, component_b_do(1));
+}
