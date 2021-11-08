@@ -1,0 +1,6 @@
+:cmock:
+    :includes_h_pre_orig_header:
+    - FreeRTOS.h
+    :plugins:
+    - expect
+    - expect_any_args
