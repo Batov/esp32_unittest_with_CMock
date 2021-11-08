@@ -1,0 +1,3 @@
+[submodule "mocks/cmock/CMock"]
+	path = mocks/cmock/CMock
+	url = git@github.com:ThrowTheSwitch/CMock.git
